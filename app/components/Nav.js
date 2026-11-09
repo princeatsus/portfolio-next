@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 
 const links = [
+  { href: "#top", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
+  { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -31,13 +32,18 @@ export default function Nav() {
 
   return (
     <header className="nav">
+      <a className="nav-brand" href="#top">
+        Elesi Prince Atsu
+      </a>
       <button
         className="menu-btn"
-        aria-label="Toggle menu"
+        aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen(!open)}
       >
-        Menu
+        <span />
+        <span />
+        <span />
       </button>
       <nav id="links" className={open ? "open" : ""}>
         {links.map((link) => (
