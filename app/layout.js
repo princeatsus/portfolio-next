@@ -14,9 +14,23 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Prince Atsu — Full Stack Developer",
+  metadataBase: new URL("https://YOUR-SITE.vercel.app"),
+  title: "Elesi Prince Atsu | Aspiring Software Engineer",
   description:
-    "Prince Atsu builds web apps with React, Next.js, Node.js and Supabase. IT student at Ho Technical University, based in Aflao, Ghana.",
+    "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
+  openGraph: {
+    title: "Elesi Prince Atsu | Aspiring Software Engineer",
+    description:
+      "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
+    type: "website",
+    siteName: "Elesi Prince Atsu",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elesi Prince Atsu | Aspiring Software Engineer",
+    description:
+      "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
+  },
 };
 
 export default function RootLayout({ children }) {
