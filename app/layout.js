@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://portfolio-next-kohl-omega.vercel.app"),
+  metadataBase: new URL("https://princeelesi.vercel.app"),
   title: "Elesi Prince Atsu | Aspiring Software Engineer",
   description:
     "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
