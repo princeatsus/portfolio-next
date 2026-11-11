@@ -2,6 +2,7 @@
 import CountUp from "@/components/CountUp";
 import Image from "next/image";
 import ContactSection from "./components/ContactSection";
+import LandingExperience from "./components/LandingExperience";
 import Nav from "./components/Nav";
 
 const tech = [
@@ -75,7 +76,7 @@ function AboutFactIcon({ name }) {
 
 export default function Home() {
   return (
-    <>
+    <LandingExperience>
       <Nav />
 
       <main id="top">
@@ -94,12 +95,9 @@ export default function Home() {
               Aspiring <span className="accent">Software Engineer</span>
             </h1>
             <p className="role">
-              HND Information Technology student at Ho Technical University,
-              building real systems and growing every day.
-            </p>
-            <p className="lead">
-              Building web apps with React, Next.js, Node.js and Supabase. Based
-              in Aflao, Ghana.
+              HND Information Technology student at Ho Technical University in
+              Aflao, Ghana, learning to build reliable web applications with
+              React, Next.js, Node.js and Supabase.
             </p>
             <div className="hero-stats">
               <div><strong><CountUp end={3} suffix="+" /></strong><span>Projects Built</span></div>
@@ -281,6 +279,6 @@ export default function Home() {
           <a className="back-to-top" href="#top">↑ Back to Top</a>
         </div>
       </footer>
-    </>
+    </LandingExperience>
   );
 }

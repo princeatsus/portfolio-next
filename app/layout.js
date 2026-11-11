@@ -1,4 +1,4 @@
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat, Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -11,6 +11,12 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400"],
   variable: "--font-poppins",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-space-grotesk",
 });
 
 export const metadata = {
@@ -35,7 +41,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${poppins.variable} ${spaceGrotesk.variable}`}>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

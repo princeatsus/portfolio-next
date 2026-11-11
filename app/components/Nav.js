@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { LandingContext } from "./LandingExperience";
 
 const links = [
   { href: "#top", label: "Home" },
@@ -13,6 +14,7 @@ const links = [
 export default function Nav() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
+  const returnToIntro = useContext(LandingContext);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -56,6 +58,30 @@ export default function Nav() {
             {link.label}
           </a>
         ))}
+        <button
+          className="intro-nav-button"
+          type="button"
+          onClick={() => {
+            setOpen(false);
+            returnToIntro();
+          }}
+        >
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m12 19-7-7 7-7" />
+            <path d="M19 12H5" />
+          </svg>
+          Intro
+        </button>
       </nav>
     </header>
   );
