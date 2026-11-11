@@ -1,5 +1,7 @@
 import { Montserrat, Poppins, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -42,7 +44,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${poppins.variable} ${spaceGrotesk.variable}`}>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
