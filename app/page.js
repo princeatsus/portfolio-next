@@ -16,7 +16,7 @@ const tech = [
 ];
 
 const aboutParagraphs = [
-  "Hi, I'm Elesi Prince Atsu, a Higher National Diploma student in Information Technology at Ho Technical University, based in Aflao, Ghana. I'm working towards becoming a software engineer who builds reliable systems that solve real problems.",
+  "Hi, I'm Prince Elesi, a Higher National Diploma student in Information Technology at Ho Technical University, based in Aflao, Ghana. I'm working towards becoming a software engineer who builds reliable systems that solve real problems.",
   "I built the Departmental Dues Management System for the COMPSSA HTU Hackathon 2026, with live Paystack payments, Mobile Money reconciliation and an audit trail. Before that, I spent a year teaching ICT, and I also lead the media team at my church, which taught me how to explain things clearly and work with people.",
   "I'm now documenting my journey online, one project at a time. My long-term goal is to turn the systems I build into real businesses that serve people in my community. If you have an internship, a project or just a question, I'd love to hear from you.",
 ];
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="hero-photo">
             <Image
               src="/elesi-portrait.png"
-              alt="Elesi Prince Atsu"
+              alt="Prince Elesi"
               width={600}
               height={600}
               priority
@@ -267,7 +267,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-inner wrap">
           <div className="footer-identity">
-            <strong>Elesi Prince Atsu</strong>
+            <strong>Prince Elesi</strong>
             <span>Aspiring Software Engineer</span>
           </div>
           <div className="footer-center">
@@ -276,7 +276,7 @@ export default function Home() {
               <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
             </nav>
-            <p>&copy; 2026 Elesi Prince Atsu. All rights reserved.</p>
+            <p>&copy; 2026 Prince Elesi. All rights reserved.</p>
           </div>
           <a className="back-to-top" href="#top">↑ Back to Top</a>
         </div>

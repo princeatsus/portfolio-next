@@ -33,7 +33,7 @@ export default function Nav() {
   return (
     <header className="nav">
       <a className="nav-brand" href="#top">
-        Elesi Prince Atsu
+        Prince Elesi
       </a>
       <button
         className="menu-btn"

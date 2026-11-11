@@ -15,19 +15,19 @@ const poppins = Poppins({
 
 export const metadata = {
   metadataBase: new URL("https://princeelesi.vercel.app"),
-  title: "Elesi Prince Atsu | Aspiring Software Engineer",
+  title: "Prince Elesi | Aspiring Software Engineer",
   description:
     "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
   openGraph: {
-    title: "Elesi Prince Atsu | Aspiring Software Engineer",
+    title: "Prince Elesi | Aspiring Software Engineer",
     description:
       "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
     type: "website",
-    siteName: "Elesi Prince Atsu",
+    siteName: "Prince Elesi",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elesi Prince Atsu | Aspiring Software Engineer",
+    title: "Prince Elesi | Aspiring Software Engineer",
     description:
       "HND Information Technology student building reliable systems. See my projects, including a live dues management platform with Paystack payments.",
   },
