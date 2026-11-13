@@ -210,11 +210,7 @@ export default function Home() {
             <div className="info">
               <h3>Departmental Dues Management System</h3>
               <p>
-                A role-based platform for collecting and tracking departmental
-                dues. Students pay through Paystack in live mode, sign in with
-                HTU Google accounts, and treasurers reconcile Mobile Money CSV
-                exports with fuzzy matching. Every change is written to an audit
-                log.
+                A role-based platform for collecting and tracking departmental dues, built for the COMPSSA HTU Hackathon 2026. Students sign in with HTU Google accounts and pay through a Paystack integration (tested in test mode). Treasurers reconcile Mobile Money CSV exports with fuzzy matching, and every change is written to an audit log. Shown here as a demo.
               </p>
               <ul className="chips">
                 <li>Next.js</li><li>Node.js</li><li>Supabase</li><li>PostgreSQL</li><li>Paystack</li>
